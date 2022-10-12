@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgradasi"
+    android:orientation="horizontal"
+    tools:context=".CariHotel">
+
+    <TextView
+        android:id="@+id/cari_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="35dp"
+        android:text="@string/cari_hotel_yuk"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cari_hotel"
+        android:layout_marginLeft="32dp"
+        android:onClick="showDatePickerDialogIn"
+        android:text="@string/check_in_date" />
+
+    <Button
+        android:id="@+id/button_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cari_hotel"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/button_in"
+        android:onClick="showDatePickerDialogOut"
+        android:text="@string/check_out_date" />
+
+    <TextView
+        android:id="@+id/txtkamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_in"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="21dp"
+        android:paddingLeft="5dp"
+        android:text="@string/jumlah_kamar"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/label_spinner_kmr"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/button_out"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/txtkamar"
+        android:background="@drawable/outline_round">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/checkin_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_spinner_kmr"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="21dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/checkout_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkin_confirm"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="18dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkout_confirm"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="openHalamanHotel"
+        android:text="Search "
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_button"
+        app:srcCompat="@drawable/robot1" />
+</RelativeLayout>

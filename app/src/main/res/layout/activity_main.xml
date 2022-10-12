@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundbatik2"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/sign_up_text" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/user" />
+
+    <EditText
+        android:id="@+id/username_text"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/my_background"
+        android:paddingLeft="15dp"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0"
+        android:paddingLeft="15dp"
+        android:ems="10"
+        android:background="@drawable/my_background"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_weight="0"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="17dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/katakata"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Kenyamanan dan Kepuasan anda adalah nomor 1 bagi kami." />
+
+</LinearLayout>

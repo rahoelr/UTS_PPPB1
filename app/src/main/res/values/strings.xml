@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">myHotel</string>
+    <string name="username_text">Username</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="cari_hotel_yuk">Cari Hotel Yuk !</string>
+    <string name="check_in_date">Check-In Date</string>
+    <string name="check_out_date">Check-Out Date</string>
+    <string name="jumlah_kamar">Jumlah Kamar :</string>
+    <string-array name="labels_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string name="date_picker_in">datePickerIn</string>
+    <string name="date_picker_out">datePickerOut</string>
+    <string name="dateIn">Date In :</string>
+    <string name="dateOut">Date Out :</string>
+    <string name="cari_hotel">Daftar Hotel</string>
+    <string name="nothing_selected">onNothingSelected:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
